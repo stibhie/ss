@@ -1016,7 +1016,7 @@
             <div>
               <div class="project-title">NUbies Week</div>
               <span class="project-category">Events</span>
-              <span class="proj-status-badge" id="badge-1" style="background:rgba(255,255,255,.06);color:var(--text-muted);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-left:6px;padding:2px 8px;border-radius:99px;display:inline-block;">⏳ Pending</span>
+             <div class="timeline-status upcoming">Upcoming</div>
             </div>
           </div>
           <div class="project-header-right">
@@ -1029,25 +1029,18 @@
           <div class="budget-compare">
             <div class="budget-col">
               <div class="budget-col-label">Proposed Budget</div>
-              <div class="budget-col-amount" style="display:flex;align-items:baseline;gap:2px;">
-                <span style="color:var(--gold);font-size:22px;font-weight:600;font-family:var(--serif);">₱</span>
-                <input class="proj-proposed" id="prop-1" type="number" value="100000" min="0" oninput="calcProject(1)" />
-              </div>
+              <div class="budget-col-amount proposed">₱30,000</div>
               <div class="budget-col-note">Approved by Treasurer</div>
             </div>
             <div class="budget-col">
               <div class="budget-col-label">Actual Expenses</div>
-              <div class="budget-col-amount" style="display:flex;align-items:baseline;gap:2px;">
-                <span style="color:var(--success);font-size:22px;font-weight:600;font-family:var(--serif);">₱</span>
-                <input class="proj-actual" id="act-1" type="number" value="" min="0" placeholder="Enter amount" oninput="calcProject(1)" />
+              <div class="budget-col-amount actual">₱41,200</span>
               </div>
               <div class="budget-col-note">Scheduled July 2026</div>
             </div>
           </div>
           <div class="status-toggle-wrap">
             <span class="status-toggle-label">Mark as:</span>
-            <button class="status-btn active-pending" id="btn-pending-1" onclick="setStatus(1,'pending')">⏳ Pending</button>
-            <button class="status-btn" id="btn-complete-1" onclick="setStatus(1,'complete')">✓ Complete</button>
           </div>
           <div style="margin-top:10px;">
             <span class="variance-tag variance-pending" id="variance-1">⏳ Pending completion</span>
